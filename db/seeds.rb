@@ -5,7 +5,7 @@
 #   product.save
 # end
 
-product = Product.find_by(id: 11)
-product.description = "Color: Oak, Material: Oak Wood, Size: 48 inches wide by 60 inches deep and 36 inches high."
-product.save
-p product
+# product = Product.find_by(id: 5)
+# product.description = "Color: Beige, Material: Linen, Size: 12 inches x 12 inches, Disclamer: Not a real computer."
+# product.save
+# p product
