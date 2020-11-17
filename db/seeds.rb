@@ -9,3 +9,10 @@
 # product.description = "Color: Beige, Material: Linen, Size: 12 inches x 12 inches, Disclamer: Not a real computer."
 # product.save
 # p product
+
+# products = Product.all
+
+# products.each do |product|
+#   id = rand(1..3)
+#   product.update(supplier_id: id)
+# end
