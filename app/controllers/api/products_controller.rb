@@ -36,6 +36,7 @@ class Api::ProductsController < ApplicationController
       price: params[:price],
       image_url: params[:image_url],
       inventory: params[:inventory],
+      supplier_id: params[:supplier_id],
     )
     
     if @product.save
@@ -55,6 +56,7 @@ class Api::ProductsController < ApplicationController
     @product.price = params[:price] || @product.price
     @product.image_url = params[:image_url] || @product.image_url
     @product.inventory = params[:inventory] || @product.inventory
+    @product.supplier_id = params[:supplier_id] || @product.supplier_id
     @product.save
     render 'show.json.jb'
   end
