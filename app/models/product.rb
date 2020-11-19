@@ -2,6 +2,7 @@ class Product < ApplicationRecord
   validates :name, :price, :description, presence: true
   validates :description, length: {in: 10..500}
   belongs_to :supplier
+  has_many :images
   # def supplier
   #   Supplier.find_by(id: supplier_id)
   # end
@@ -12,12 +13,10 @@ class Product < ApplicationRecord
   end
 
   def is_discounted?
-    price.to_i < 10
+    price < 10
   end  
 
   def total
-    @price = price.to_i
-    @total = @price.round(2) + tax
-    @total.round(2)
+    @total = price + tax
   end
 end

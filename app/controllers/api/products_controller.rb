@@ -34,7 +34,6 @@ class Api::ProductsController < ApplicationController
       name: params[:name],
       description: params[:description],
       price: params[:price],
-      image_url: params[:image_url],
       inventory: params[:inventory],
       supplier_id: params[:supplier_id],
     )
@@ -54,7 +53,6 @@ class Api::ProductsController < ApplicationController
     @product.name = params[:name] || @product.name 
     @product.description = params[:description] || @product.description
     @product.price = params[:price] || @product.price
-    @product.image_url = params[:image_url] || @product.image_url
     @product.inventory = params[:inventory] || @product.inventory
     @product.supplier_id = params[:supplier_id] || @product.supplier_id
     @product.save

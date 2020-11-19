@@ -13,6 +13,13 @@
 # products = Product.all
 
 # products.each do |product|
-#   id = rand(1..3)
-#   product.update(supplier_id: id)
+#   url = rand(1..25)
+#   product.update(url: url)
 # end
+
+
+
+# 12.times do 
+#   Image.create!(url: Faker::Avatar.image, product_id: rand(1..12))
+# end
+ 

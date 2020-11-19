@@ -4,10 +4,10 @@
   description: product.description,
   price: product.price,
   discount: product.is_discounted?,
-  image_url: product.image_url,
   tax: product.tax,
   total: product.total,
   inventory: product.inventory,
   supplier: product.supplier.name,
+  images: product.images,
 }
 
