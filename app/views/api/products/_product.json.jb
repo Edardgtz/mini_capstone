@@ -1,4 +1,5 @@
-{ 
+
+  { 
   id: product.id,
   name: product.name,
   description: product.description,
@@ -9,5 +10,5 @@
   inventory: product.inventory,
   supplier: product.supplier.name,
   images: product.images,
+  current_user: current_user  
 }
-
