@@ -1,10 +1,9 @@
 { 
-  id: @order.id,
-  user_id: @order.user_id,
-  product_id: @order.product_id,
-  quantity: @order.quantity, 
-  sub_total: @order.sub_total,
-  tax: @order.tax,
-  total: @order.total,
-  current_user: current_user
+  id: order.id,
+    user_id: order.user_id,
+    product: order.product,
+    quantity: order.quantity,
+    subtotal: order.subtotal,
+    tax: order.tax,
+    total: order.total,  
 }

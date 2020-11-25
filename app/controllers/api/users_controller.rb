@@ -1,4 +1,6 @@
 class Api::UsersController < ApplicationController
+  before_action :athenticate_user, only: [:create, :update, :destroy]
+  
   def create
     user = User.new(
       name: params[:name],

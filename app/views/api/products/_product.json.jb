@@ -10,5 +10,6 @@
   inventory: product.inventory,
   supplier: product.supplier.name,
   images: product.images,
-  current_user: current_user  
+  current_user: current_user,
+  category: product.categories,  
 }
