@@ -27,6 +27,10 @@ class Api::OrdersController < ApplicationController
     else
       render json: { errors: 'Something isnt right.' }, status: :bad_request
     end
+    carted_products.each do |carted_product|
+      carted_product.update(status: "purchased", order_id: @order.id)
+    end
+
   end
 
   def index
